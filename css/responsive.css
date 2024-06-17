@@ -22,8 +22,9 @@
             font-size: 13px;
         }
         .navPlus{
-            display: block;
+            display: flex;
             justify-content: center;
+            flex-direction: column;
             height:100px;
         }
         .navPlus .banner-b{
@@ -33,6 +34,7 @@
         .navPlus .banner-a{
             padding:13px 35px;
             margin-right: 4px;
+            margin-bottom: 10px;
             text-decoration: none;
             text-align: center;
             border-radius:50px;
@@ -342,6 +344,19 @@
        text-align: justify;
        font-size: 14px;
    }
+   .navPlus{
+    display: block;
+    justify-content: center;
+    height:100px;
+}
+.habaNav .habaLinks li a{
+  text-decoration: none;
+  color:white;
+  padding:8px;
+  font-size: 14px;
+  border-radius:30px;
+  transition:cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.4s;
+}
    .navPlus .banner-a{
        padding:13px 35px;
        margin-right: 4px;
