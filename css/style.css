@@ -181,6 +181,20 @@ html{
     overflow: hidden;
     display: block;
 }
+.col-lg-3 .habaServItems h2{
+    text-align: center;
+    text-transform: uppercase;
+    color:aliceblue;
+    text-shadow: 5px 0px 15px rgba(52, 53, 53, 0.973);
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    position:absolute;
+    top:25%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    
+}
 .col-lg-3 .habaServItems img{
     /* max-width:300px; */
     width:100%;
@@ -189,8 +203,8 @@ html{
     height:188px;
 }
 .col-lg-3 .habaServItems p{
-   font-size: 13px;
-   color:rgba(143, 132, 132, 0.822);
+   font-size: 15px;
+   color:rgba(82, 79, 79, 0.822);
     height:100px;
 }
 .col-lg-3 .habaServItems a{
@@ -454,3 +468,71 @@ html{
     border-top-left-radius: 0 !important;
     border-bottom-left-radius: 0 !important;
    }
+/* loding */
+
+.dots-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    position:fixed;
+    background-color: rgb(218, 37, 46);
+    top:50%;
+    left:50%;
+    z-index: 10000;
+    transform: translate(-50%,-50%);
+  }
+  
+  .dot {
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: rgb(230, 98, 98);;
+    animation: pulse 1.5s infinite ease-in-out;
+  }
+  
+  .dot:last-child {
+    margin-right: 0;
+  }
+  
+  .dot:nth-child(1) {
+    animation-delay: -0.3s;
+  }
+  
+  .dot:nth-child(2) {
+    animation-delay: -0.1s;
+  }
+  
+  .dot:nth-child(3) {
+    animation-delay: 0.1s;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(0.8);
+      background-color: rgb(230, 98, 98);;
+      box-shadow: 0 0 0 0 rgba(230, 98, 98, 0.5);;
+    }
+  
+    50% {
+      transform: scale(1.2);
+      background-color: rgb(230, 98, 98);;
+      box-shadow: 0 0 0 10px rgba(230, 98, 98, 0.5);;
+    }
+  
+    100% {
+      transform: scale(0.8);
+      background-color: rgb(230, 98, 98);;
+      box-shadow: 0 0 0 0 rgba(230, 98, 98, 0.5);;
+    }
+  }
+
+  .fondu-out{
+    opacity: 0;
+    
+    transition: opacity 0.6s ease-out;
+
+    z-index: -1000000;
+  }

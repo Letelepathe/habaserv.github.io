@@ -12,9 +12,11 @@
     <link rel="stylesheet" href="css/css1/nice-select.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+   
     <title>HabaSeur | Presentation</title> 
 </head>
 <body>
+    
     <header class="habaHeader">
         <nav class="habaNav">
             <p class="habaLogo">.HabaSeur</p>
@@ -27,7 +29,13 @@
             </ul>
             <span class="toggle"><i class="toggleB fa fa-bars"></i></span>
         </nav>
-        
+        <section class="dots-container loader">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </section>
         <div class="banner">
             <div class="banner-info">
                 <h1 class="banner-titre">Nous Créons votre site web professionnel en moins d'un Mois</h1>
@@ -48,37 +56,41 @@
             <div class="row">
                 <div class="col-lg-3 col-md-6 col-sm-6 ">
                     <div class="habaServItems">
-                        <img src="img/lukaj.PNG" alt="" srcset="">
+                        <h2>Bibliotheque-fac</h2>
+                        <img src="img/background.jpg" alt="" srcset="">
                         <p class="text-justify">Lorem ipsum dolor sit amet consectetur
                              adipisicing elit. Nobis laborum animi, officia sequi beatae quos ducimus itaque molestiae recusandae dolorem aliquid facere maiores, 
                             tempora saepe illo numquam vel maxime commodi!</p>
-                            <a href="http://"><i class="fa fa-globe"></i> molandeli</a>
+                            <a href="http://" class="text-center"><i class="fa fa-globe"></i> Bibliotheque-fac-sciences</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="habaServItems ">
-                        <img src="img/lukaj.PNG" alt="" srcset="">
+                        <h2>Molandeli</h2>
+                        <img src="img/background.jpg" alt="" srcset="">
                         <p class="text-justify">Lorem ipsum dolor sit amet consectetur
                              adipisicing elit. Nobis laborum animi, officia sequi beatae quos ducimus itaque molestiae recusandae dolorem aliquid facere maiores, 
                             tempora saepe illo numquam vel maxime commodi!</p>
-                            <a href="http://"><i class="fa fa-globe"></i> molandeli</a>
+                            <a href="http://" class="text-center"><i class="fa fa-globe"></i> Molandeli</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 ">
                     <div class="habaServItems ">
-                        <img src="img/app.PNG" alt="" srcset="">
+                        <h2>Archivage Doc</h2>
+                        <img src="img/background.jpg" alt="" srcset="">
                         <p class="text-justify">Lorem ipsum dolor sit amet consectetur
                              adipisicing elit. Nobis laborum ame commodi!</p>
-                            <a href="http://"><i class="fa fa-globe"></i> molandeli</a>
+                            <a href="http://" class="text-center"><i class="fa fa-globe"></i>Archivage Document</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 ">
                     <div class="habaServItems">
-                        <img src="img/a.png" alt="" srcset="">
+                        <h2>Immobilem</h2>
+                        <img src="img/background.jpg" alt="" srcset="">
                         <p class="text-justify">Lorem ipsum dolor sit amet consectetur
                              adipisicing elit. Nobis laborum animi, officia sequi beatae quos ducimus itaque molestiae recusandae dolorem aliquid facere maiores, 
                             tempora saepe illo numquam vel maxime commodi!</p>
-                            <a href="http://"><i class="fa fa-globe"></i> molandeli</a>
+                            <a href="http://" class="text-center"><i class="fa fa-globe"></i> immobilem</a>
                     </div>
                 </div>
                 
@@ -277,7 +289,7 @@
                             document.querySelector('.habaNav').classList.add('stickey');
                             Toggle1.style.visibility="visible";
                         }else{document.querySelector('.habaNav').classList.remove('stickey');
-                        Toggle1.style.visibility="hidden";
+                        Toggle1.style.visibility="visible";
                         }
                         console.log(p) ;
                     }
@@ -429,7 +441,7 @@
                     <p class="text-justify">Lorem ipsumus veritatis dolorum. Error temporibus explicabo deleniti blanditiis, numquam laboriosam, voluptates ipsum commodi consequuntur dolores molestias 
                         velit similique odit obcaecati praesentium.</p>
                    <div class="det">
-                    <img src="img/img4.jpg" alt="patrice Lumumba"><br>
+                    <img src="img/img3.jpg" alt="kosta blanchard"><br>
                     <span>Kosta Gabriel</span>
                     <h6>Embeded system developer</h6>
                     <span class="start">
@@ -539,5 +551,13 @@
             </div>
         </footer>
     </main>
+    <script>
+        const loaded=document.querySelector('.dots-container');
+        const loader=()=>{
+            loaded.classList.add('fondu-out');
+        }
+        window.addEventListener('load',loader);
+    </script>
+       
 </body>
 </html>

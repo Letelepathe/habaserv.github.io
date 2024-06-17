@@ -161,6 +161,11 @@
             transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.4s ;
             margin-bottom: 10px;
          }
+         .col-lg-3 .habaServItems p{
+          font-size: 14px;
+          color:rgba(46, 44, 44, 0.822);
+           height:150px;
+       }
             /* apropos */
     .habaAbout{
         height:auto;
@@ -616,8 +621,8 @@
         height:188px;
     }
     .col-lg-3 .habaServItems p{
-       font-size: 13px;
-       color:rgba(143, 132, 132, 0.822);
+       font-size: 15px;
+       color:rgba(66, 65, 65, 0.822);
         height:100px;
     }
     .col-lg-3 .habaServItems a{
@@ -991,8 +996,8 @@
         height:188px;
     }
     .col-lg-3 .habaServItems p{
-       font-size: 13px;
-       color:rgba(143, 132, 132, 0.822);
+       font-size: 15px;
+       color:rgba(65, 65, 65, 0.822);
         height:150px;
     }
     .col-lg-3 .habaServItems a{
@@ -1364,8 +1369,8 @@
         height:188px;
     }
     .col-lg-3 .habaServItems p{
-       font-size: 13px;
-       color:rgba(143, 132, 132, 0.822);
+       font-size: 15px;
+       color:rgba(46, 44, 44, 0.822);
         height:150px;
     }
     .col-lg-3 .habaServItems a{
@@ -1737,8 +1742,8 @@
         height:188px;
     }
     .col-lg-3 .habaServItems p{
-       font-size: 13px;
-       color:rgba(143, 132, 132, 0.822);
+       font-size: 15px;
+       color:rgba(44, 42, 42, 0.822);
         height:150px;
     }
     .col-lg-3 .habaServItems a{
