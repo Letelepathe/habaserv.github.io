@@ -149,10 +149,7 @@ html{
 .navPlus .banner-a .fa{
     margin:0 10px;
 }
-.navR{
-    display: none;
-    transition: all cubic-bezier(0.755, 0.05, 0.855, 0.06);
-}
+
 
 .habaTitle{
     text-align: center;
@@ -204,7 +201,7 @@ html{
  }
  .habaTafItems{
     height:380px;
-    background-color: rgba(124, 127, 129, 0.589);
+    background-color: rgba(170, 175, 180, 0.822);
     padding:25px;
     color:rgba(255, 255, 255, 0.76);
     border-radius: 5px;
@@ -271,7 +268,9 @@ html{
     /* min-width: 50%; */
   }
   .habaTestItems p {
-    color:rgba(179, 183, 187, 0.979);
+    color:rgba(226, 226, 226, 0.979);
+    height:150px;
+    overflow: hidden;
   }
   .habaTestItems span {
     font-weight: 800;
@@ -293,6 +292,9 @@ html{
     /* position:relative;
     left:10%; */
   }
+  .habaTesti{
+    background-color: rgb(41, 41, 41);
+  }
   .habaTestItems ul li{
    display: inline-block;
    margin-left: 1px;
@@ -307,7 +309,8 @@ html{
     left:0%;
    }
    .habaTestItems h6{
-    color:rgb(7, 7, 7);
+    color:rgba(245, 171, 171, 0.938);
+    font-weight:bold;
    }
    .habaAbout{
     height:70vh;

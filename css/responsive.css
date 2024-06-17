@@ -10,12 +10,12 @@
             text-align: center;
             width: 80%;
             position:relative;
-            top:30%;
+            top:20%;
             left:12%;
         }
         .banner-titre{
             font-weight: bolder;
-            font-size: 25px;
+            font-size: 22px;
         }
         .banner-p{
             text-align: justify;
@@ -69,14 +69,19 @@
           position:fixed;
           top:0;
           right:0;
-          width:100%;
+          width:0%;
           height:100vh;
           /* opacity:0.5; */
           padding: 125px 50px;
           background-color: rgba(0, 0, 0, 0.493);
           text-align: center;
-          z-index: 100;
-          transition: .5s;
+          display: none;
+          z-index: 100000;
+        }
+        .navR.active{
+          display: block;
+          width:100%;
+          transition: ease-in .6s;
         }
         .navR #toggle1{
           position:absolute;
@@ -102,7 +107,7 @@
           background-color: rgb(47, 49, 51);
           text-align: center;
           z-index: 90;
-          transition: all .5s;
+          transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) .5s;
         }
         .navR .habaLinks1 li{
           display: block;
@@ -116,6 +121,9 @@
           transition:ease-in 0.5s;
         }
         .navR .habaLinks1 li a:hover{
+          color:rgb(226, 69, 69);
+        }
+        .navR .habaLinks1 li a.active{
           color:rgb(226, 69, 69);
         }
         .navPlus .banner-b{
@@ -146,7 +154,7 @@
         }
         .habaTafItems{
             height:380px;
-            background-color: rgba(124, 127, 129, 0.589);
+            background-color: rgba(124, 127, 129, 0.822);
             color:rgba(255, 255, 255, 0.76);
             padding:25px ;
             border-radius: 5px;
@@ -723,8 +731,9 @@
         position: relative;
         left:0%;
        }
-       .habaTestItems h6{
-        color:rgb(7, 7, 7);
+       .habaTestItems h6{ 
+        color:rgba(245, 171, 171, 0.938);
+        font-weight:bold;
        }
        .habaAbout{
         height:auto;
@@ -1097,7 +1106,8 @@
         left:0%;
        }
        .habaTestItems h6{
-        color:rgb(7, 7, 7);
+         color:rgba(245, 171, 171, 0.938);
+        font-weight:bold;
        }
        .habaAbout{
         height:70vh;
@@ -1458,7 +1468,7 @@
       .habaTestItems ul li{
        display: inline-block;
        margin-left: 1px;
-       color:rgb(167, 116, 8);
+       color:rgb(185, 129, 6);
       }
       /* .habaTestItems .det{
         position: relative;
@@ -1468,8 +1478,9 @@
         position: relative;
         left:0%;
        }
-       .habaTestItems h6{
-        color:rgb(7, 7, 7);
+       .habaTestItems h6{ 
+        color:rgba(245, 171, 171, 0.938);
+        font-weight:bold;
        }
        .habaAbout{
         height:70vh;
@@ -1841,7 +1852,8 @@
         left:0%;
        }
        .habaTestItems h6{
-        color:rgb(7, 7, 7);
+        color:rgba(245, 171, 171, 0.938);
+        font-weight:bold;
        }
        .habaAbout{
         height:70vh;

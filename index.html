@@ -19,14 +19,15 @@
         <nav class="habaNav">
             <p class="habaLogo">.HabaSeur</p>
              <ul class="habaLinks ">
-                <li><a href="#" class="habaNav-link">Home</a></li>
-                <li><a href="#rel" class="habaNav-link">Realisation</a></li>
-                <li><a href="#off" class="habaNav-link">Offres</a></li>
-                <li><a href="#test" class="habaNav-link"></i>Testimonials</a></li>
-                <li><a href="https://wa.me/+243996834353" class="habaNav-link active">Contact</a></li>
+                <li><a  href="#" class="habaNav-link hom" >Home</a></li>
+                <li><a  href="#rel" class="habaNav-link rel" >Realisation</a></li>
+                <li><a  href="#off" class="habaNav-link off" >Offres</a></li>
+                <li><a  href="#test" class="habaNav-link test" ></i>Testimonials</a></li>
+                <li><a  href="https://wa.me/+243996834353" class="habaNav-link cont">Contact</a></li>
             </ul>
             <span class="toggle"><i class="toggleB fa fa-bars"></i></span>
         </nav>
+        
         <div class="banner">
             <div class="banner-info">
                 <h1 class="banner-titre">Nous Créons votre site web professionnel en moins d'un Mois</h1>
@@ -86,13 +87,116 @@
         <section class="navR closeNav">
             <span id="toggle1" class="toggle tb1 text-light"><i class="toggleC fa fa-close"></i></span>
             <ul class="habaLinks1 ">
-                <li><a href="#" class="habaNav-link">Home</a></li>
-                <li><a href="#rel" class="habaNav-link">Realisation</a></li>
-                <li><a href="#off" class="habaNav-link">Offres</a></li>
-                <li><a href="#test" class="habaNav-link"></i>Testimonials</a></li>
-                <li><a href="https://wa.me/+243996834353" class="habaNav-link active">Contact</a></li>
+                <li><a href="#" class="habaNav-link homE">Home</a></li>
+                <li><a href="#rel" class="habaNav-link reli">Realisation</a></li>
+                <li><a href="#off" class="habaNav-link offr">Offres</a></li>
+                <li><a href="#test" class="habaNav-link testY"></i>Testimonials</a></li>
+                <li><a href="https://wa.me/+243996834353" class="habaNav-link con">Contact</a></li>
             </ul>
         </section>
+        <script>
+            const reli = document.querySelector('.reli');
+            const offr = document.querySelector('.offr');
+            const testY = document.querySelector('.testY');
+            const con = document.querySelector('.con');
+            const homE = document.querySelector('.homE');
+            console.log(homE);
+        const rea=()=>{
+            reli.classList.add('active');
+            offr.classList.remove('active');
+            testY.classList.remove('active');
+            con.classList.remove('active');
+            homE.classList.remove('active');
+        }
+        const ofr=()=>{
+            reli.classList.remove('active');
+            offr.classList.add('active');
+            testY.classList.remove('active');
+            con.classList.remove('active');
+            homE.classList.remove('active');
+        }
+        const testy=()=>{
+            reli.classList.remove('active');
+            offr.classList.remove('active');
+            testY.classList.add('active');
+            con.classList.remove('active');
+            homE.classList.remove('active');
+        }
+        const contac=()=>{
+            reli.classList.remove('active');
+            offr.classList.remove('active');
+            testY.classList.remove('active');
+            con.classList.add('active');
+            homE.classList.remove('active');
+        }
+        const homm=()=>{
+            reli.classList.remove('active');
+            offr.classList.remove('active');
+            testY.classList.remove('active');
+            con.classList.remove('active');
+            homE.classList.add('active');
+        }
+        homE.addEventListener('laod',
+            homm()
+        )
+        reli.addEventListener('click',rea);
+            offr.addEventListener('click',ofr);
+            testY.addEventListener('click',testy);
+            con.addEventListener('click',contac);
+            homE.addEventListener('click',homm);
+            
+        </script>
+        <script>
+            let rel = document.querySelector('.rel');
+            let off = document.querySelector('.off');
+            let test = document.querySelector('.test');
+            let cont = document.querySelector('.cont');
+            let hom = document.querySelector('.hom');
+        
+        const real=()=>{
+            rel.classList.add('active');
+            off.classList.remove('active');
+            test.classList.remove('active');
+            cont.classList.remove('active');
+            hom.classList.remove('active');
+        }
+        const ofre=()=>{
+            rel.classList.remove('active');
+            off.classList.add('active');
+            test.classList.remove('active');
+            cont.classList.remove('active');
+            hom.classList.remove('active');
+        }
+        const testi=()=>{
+            rel.classList.remove('active');
+            off.classList.remove('active');
+            test.classList.add('active');
+            cont.classList.remove('active');
+            hom.classList.remove('active');
+        }
+        const conta=()=>{
+            rel.classList.remove('active');
+            off.classList.remove('active');
+            test.classList.remove('active');
+            cont.classList.add('active');
+            hom.classList.remove('active');
+        }
+        const home=()=>{
+            rel.classList.remove('active');
+            off.classList.remove('active');
+            test.classList.remove('active');
+            cont.classList.remove('active');
+            hom.classList.add('active');
+        }
+        hom.addEventListener('laod',
+            home()
+        )
+        rel.addEventListener('click',real);
+        off.addEventListener('click',ofre);
+        test.addEventListener('click',testi);
+        cont.addEventListener('click',conta);
+        hom.addEventListener('click',home);
+        </script>
         <script>
             const pl=document.getElementsByClassName('habaTafItems');
             const bb=document.querySelector('.banner-b');
@@ -110,13 +214,13 @@
                         Toggle.classList.remove('fa-close');
                         Toggle.classList.add('fa-bars');
                         Toggle.style.visibility="visible";
-                        navR.style.display="none";
+                        navR.classList.remove('active');
                         console.log(Toggle,navR);
                     }else{
                         Toggle.classList.remove('fa-bars');
                         Toggle.classList.add('fa-close');
                         Toggle.style.visibility="visible";
-                        navR.style.display="block";
+                        navR.classList.add('active');
                         console.log(Toggle);
                     }
                 }
@@ -130,14 +234,14 @@
                         Toggle.classList.remove('fa-close');
                         Toggle.classList.add('fa-bars');
                         Toggle.style.visibility="visible";
-                        navR.style.display="none";
+                        navR.classList.remove('active');
                         console.log(Toggle,navR);
                     }else{
                         Toggle1.classList.remove('fa-bars');
                         Toggle1.classList.add('fa-close');
                         Toggle.style.display="none";
                         Toggle.style.visibility="visible";
-                        navR.style.display="block";
+                        navR.classList.add('active');
                         console.log(Toggle);
                     }
                 }
@@ -147,7 +251,7 @@
                     
                     document.querySelector('.toggle').classList.remove('active');
                     document.querySelector('.habaLinks').style.display='block';
-                    document.querySelector('.navR').style.display='none';
+                    document.querySelector('.navR').classList.remove('active');
                     // closeNav.style.display='block';
                 }
                 
@@ -205,7 +309,7 @@
                   if(window.innerWidth>=768){
                     document.querySelector('.habaLinks').style.display='block';
                     document.querySelector('.toggle').style.display="none";
-                    document.querySelector('.navR').style.display="none";
+                    document.querySelector('.navR').classList.remove('active');
                     console.log(bb);
                 }
                 if(window.innerWidth>=250 && window.innerWidth<=576)
@@ -234,7 +338,7 @@
                 }else{
                     document.querySelector('.toggle').style.display='none';
                     document.querySelector('.habaLinks').style.display='block';
-                    document.querySelector('.navR').style.display='none';
+                    document.querySelector('.navR').classList.remove('active');
                     Toggle.classList.remove('fa-close');
                     Toggle.classList.add('fa-bars');
                 }
@@ -251,10 +355,11 @@
                         <strong>289$</strong><br>
                         <h3>E-Commerce</h3>
                         <ul>
-                            <li><i class="fa fa-check"></i> Hebergent</li>
-                            <li><i class="fa fa-check"></i> referencement SEO</li>
-                            <li><i class="fa fa-check"></i> lolo</li>
-                            <li><i class="fa fa-check"></i> akatsuki</li>
+                            <li><i class="fa fa-check"></i> Hebergement 2 mois Gratuit</li>
+                            <li><i class="fa fa-check"></i> Referencement</li>
+                            <li><i class="fa fa-check"></i> 250 Mails </li>
+                            <li><i class="fa fa-check"></i> 1.5Go Base de données</li>
+                            <li><i class="fa fa-check"></i> Services Saas</li>
                         </ul>
                       </div>
                       <a href="https://wa.me/+243996834353">Commander</a>
@@ -264,13 +369,14 @@
                     <div class="habaTafItems shadow-lg pl-5 pr-5">
                         <span><i class="fa fa-star"></i> Populaire</span><br>
                       <div class="tarif_info">
-                        <strong>170$</strong><br>
+                        <strong>270$</strong><br>
                         <h3>Site vitrine</h3>
                         <ul>
-                            <li><i class="fa fa-check"></i> Hebergent</li>
-                            <li><i class="fa fa-check"></i> referencement SEO</li>
-                            <li><i class="fa fa-check"></i> lolo</li>
-                            <li><i class="fa fa-check"></i> akatsuki</li>
+                            <li><i class="fa fa-check"></i> Hebergement 2 mois Gratuit</li>
+                            <li><i class="fa fa-check"></i> Referencement</li>
+                            <li><i class="fa fa-check"></i> 200 Mails </li>
+                            <li><i class="fa fa-check"></i> 1Go Base de données</li>
+                            <li><i class="fa fa-check"></i> Services Saas</li>
                         </ul>
                       </div>
                       <a href="https://wa.me/+243996834353">Commander</a>
@@ -280,13 +386,14 @@
                     <div class="habaTafItems shadow-lg pl-5 pr-5">
                         <span><i class="fa fa-star"></i> Populaire</span><br>
                       <div class="tarif_info">
-                        <strong>200$</strong><br>
+                        <strong>150$</strong><br>
                         <h3>Portfolio</h3>
                         <ul>
-                            <li><i class="fa fa-check"></i> Hebergent</li>
-                            <li><i class="fa fa-check"></i> referencement SEO</li>
-                            <li><i class="fa fa-check"></i> lolo</li>
-                            <li><i class="fa fa-check"></i> akatsuki</li>
+                            <li><i class="fa fa-check"></i> Hebergement 2 mois Gratuit</li>
+                            <li><i class="fa fa-check"></i> Referencement</li>
+                            <li><i class="fa fa-check"></i> 100 Mails </li>
+                            <li><i class="fa fa-check"></i> 512Mo Base de données</li>
+                            <li><i class="fa fa-check"></i> Services Saas</li>
                         </ul>
                       </div>
                       <a href="https://wa.me/+243996834353">Commander</a>
@@ -319,8 +426,7 @@
               </div>
               <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="habaTestItems pl-5 pr-5">
-                    <p class="text-justify">Lorem ipsum dolor sit amet consectetur 
-                        adipisicing elit. Officia accusamus veritatis dolorum. Error temporibus explicabo deleniti blanditiis, numquam laboriosam, voluptates ipsum commodi consequuntur dolores molestias 
+                    <p class="text-justify">Lorem ipsumus veritatis dolorum. Error temporibus explicabo deleniti blanditiis, numquam laboriosam, voluptates ipsum commodi consequuntur dolores molestias 
                         velit similique odit obcaecati praesentium.</p>
                    <div class="det">
                     <img src="img/img4.jpg" alt="patrice Lumumba"><br>
