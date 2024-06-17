@@ -153,9 +153,7 @@ html{
     display: none;
     transition: all cubic-bezier(0.755, 0.05, 0.855, 0.06);
 }
-.navR.active{
-    display: block;
-}
+
 .habaTitle{
     text-align: center;
 }

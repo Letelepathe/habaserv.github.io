@@ -110,15 +110,13 @@
                         Toggle.classList.remove('fa-close');
                         Toggle.classList.add('fa-bars');
                         Toggle.style.visibility="visible";
-                        navR.style.display="none"; navR.style.transition="all";
-                        navR.style.transitionDuration='.5s';
+                        navR.style.display="none";
                         console.log(Toggle,navR);
                     }else{
                         Toggle.classList.remove('fa-bars');
                         Toggle.classList.add('fa-close');
-                        Toggle.style.visibility="hidden";
-                        navR.style.display="block"; navR.style.transition="all";
-                        navR.style.transitionDuration='.5s';
+                        Toggle.style.visibility="visible";
+                        navR.style.display="block";
                         console.log(Toggle);
                     }
                 }
@@ -133,14 +131,13 @@
                         Toggle.classList.add('fa-bars');
                         Toggle.style.visibility="visible";
                         navR.style.display="none";
-                        navR.style.transition="all";
-                        navR.style.transitionDuration='.5s';
                         console.log(Toggle,navR);
                     }else{
                         Toggle1.classList.remove('fa-bars');
                         Toggle1.classList.add('fa-close');
-                        Toggle.style.visibility="hidden";
-                        navR.style.display="block"; 
+                        Toggle.style.display="none";
+                        Toggle.style.visibility="visible";
+                        navR.style.display="block";
                         console.log(Toggle);
                     }
                 }
@@ -174,7 +171,10 @@
                         }
                         if(scrollY>200){
                             document.querySelector('.habaNav').classList.add('stickey');
-                        }else{document.querySelector('.habaNav').classList.remove('stickey');}
+                            Toggle1.style.visibility="visible";
+                        }else{document.querySelector('.habaNav').classList.remove('stickey');
+                        Toggle1.style.visibility="hidden";
+                        }
                         console.log(p) ;
                     }
             
