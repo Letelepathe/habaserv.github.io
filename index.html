@@ -109,12 +109,16 @@
                     if(str!="fa-bars"){
                         Toggle.classList.remove('fa-close');
                         Toggle.classList.add('fa-bars');
-                        navR.style.display="none";
+                        Toggle.style.visibility="visible";
+                        navR.style.display="none"; navR.style.transition="all";
+                        navR.style.transitionDuration='.5s';
                         console.log(Toggle,navR);
                     }else{
                         Toggle.classList.remove('fa-bars');
                         Toggle.classList.add('fa-close');
-                        navR.style.display="block";
+                        Toggle.style.visibility="hidden";
+                        navR.style.display="block"; navR.style.transition="all";
+                        navR.style.transitionDuration='.5s';
                         console.log(Toggle);
                     }
                 }
@@ -127,12 +131,16 @@
                     if(str!="fa-bars"){
                         Toggle.classList.remove('fa-close');
                         Toggle.classList.add('fa-bars');
+                        Toggle.style.visibility="visible";
                         navR.style.display="none";
+                        navR.style.transition="all";
+                        navR.style.transitionDuration='.5s';
                         console.log(Toggle,navR);
                     }else{
                         Toggle1.classList.remove('fa-bars');
                         Toggle1.classList.add('fa-close');
-                        navR.style.display="block";
+                        Toggle.style.visibility="hidden";
+                        navR.style.display="block"; 
                         console.log(Toggle);
                     }
                 }

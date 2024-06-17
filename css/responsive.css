@@ -63,8 +63,9 @@
           top:-5px;
           right:-20px;
           z-index: 10000;
+          transition: all .5s;
       }
-        .navR{
+        .navR.active{
           position:fixed;
           top:0;
           right:0;
@@ -75,8 +76,7 @@
           background-color: rgba(0, 0, 0, 0.493);
           text-align: center;
           z-index: 100;
-          display: none;
-          transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+          transition: .5s;
         }
         .navR #toggle1{
           position:absolute;
@@ -89,6 +89,7 @@
           display: block;
           top:13px;
           z-index: 150;
+          transition: all .5s;
         }
         .navR .habaLinks1 {
           position:fixed;
@@ -101,6 +102,7 @@
           background-color: rgb(47, 49, 51);
           text-align: center;
           z-index: 90;
+          transition: all .5s;
         }
         .navR .habaLinks1 li{
           display: block;
