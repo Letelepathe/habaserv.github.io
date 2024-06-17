@@ -1,0 +1,451 @@
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+    }
+.habaHeader{
+    width:100%;
+    height:100vh;
+    display: block;
+    align-items: center;
+    padding:0px 0;
+    position: relative;
+    color:aliceblue;
+    margin-bottom: 20px;
+}
+.habaHeader::before{
+    content:"";
+    position: absolute;
+    width:100%;
+    height:100vh;
+    background-image: url(../img/scd.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-bottom-left-radius:-20%;
+    border-bottom-right-radius:20%;
+    z-index: -1;
+}
+
+.habaNav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 800;
+    padding:20px 25px;
+    transition: ease-in 0.5s;
+}
+.habaNav.stickey{
+    position:fixed;
+    width: 100%;
+    background-image: url(../img/scd.jpg);
+    z-index: 10;
+}
+.habaNav .habaLinks{
+    list-style: none;
+}
+.habaNav .habaLinks li{
+    display: inline-block;
+}
+.habaNav .habaLogo{
+    font-size: 20px;
+}
+.habaNav .toggle{
+    display: none;
+}
+.habaNav .toggle.active{
+    display: block;
+}
+.habaNav .toggle .fa{
+    font-size: 30px;
+}
+.habaNav .habaLinks li a{
+    text-decoration: none;
+    color:white;
+    padding:10px;
+    border-radius:30px;
+    transition:cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.4s;
+}
+.habaNav .habaLinks li a:hover{
+    background-color: rgb(226, 69, 69);
+}
+.habaNav .habaLinks li a.active{
+    background-color: rgb(226, 69, 69);
+}
+.banner{
+    width:100%;
+    height:80vh;
+    /* background-image: url(../img/acceuil1.jpg); */
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: right;
+    position: relative;
+}
+
+.banner-info{
+    display: block;
+    text-align: center;
+    width: 60%;
+    position:relative;
+    top:25%;
+    left:20%;
+}
+.banner-titre{
+    font-weight: bolder;
+    font-size: 40px;
+}
+.banner-p{
+    text-align: justify;
+}
+.navPlus{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 20px;
+}
+.navPlus .banner-a{
+    padding:13px 35px;
+    margin-right: 4px;
+    text-decoration: none;
+    text-align: center;
+    border-radius:50px;
+    border:2px solid rgb(226, 69, 69);
+    background-color: rgb(226, 69, 69);
+    color:white;
+    transition: all ease-out 0.4s;
+}
+.navPlus .banner-a:hover{
+    padding:13px 35px;
+    text-decoration: none;
+    text-align: center;
+    border-radius:50px;
+    border:2px solid rgb(226, 69, 69);
+    background-color: rgba(226, 69, 69, 0);
+    color:rgb(241, 238, 238);
+}
+.navPlus .banner-b{
+    padding:13px 35px;
+    text-decoration: none;
+    text-align: center;
+    border-radius:50px;
+    border:2px solid rgb(226, 69, 69);
+    background-color: rgba(226, 69, 69, 0);
+    color:rgb(250, 248, 248);
+    transition: all ease-in 0.4s;
+}
+.navPlus .banner-b:hover{
+    padding:13px 35px;
+    text-decoration: none;
+    text-align: center;
+    border-radius:50px;
+    border:2px solid rgb(226, 69, 69);
+    background-color: rgb(226, 69, 69);
+    color:rgb(245, 244, 244);
+}
+.navPlus .banner-a .fa{
+    margin:0 10px;
+}
+.navR{
+    display: none;
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+}
+.habaTitle{
+    text-align: center;
+}
+.habaTitle span{
+    font-size: 20px;
+    font-weight: 700;
+    padding:8px 15px;
+    background-color: rgba(226, 69, 69, 0.801);
+    border-radius: 40px;
+    width:300px;
+    color:white;
+    text-align: center;
+}
+.habaTitle span i{
+    /* margin-left: 5px; */
+    width:25px;
+    height:25px;
+    line-height: 25px;
+    text-align: center;
+    background-color: white;
+    color:rgba(226, 69, 69, 0.664);
+    border-radius:50%;
+    font-size: 15px;
+}
+.col-lg-3 .habaServItems{
+    /* min-width:70%; */
+    height:400px;
+    overflow: hidden;
+    display: block;
+}
+.col-lg-3 .habaServItems img{
+    /* max-width:300px; */
+    width:100%;
+    /* position:relative;
+    left:20%; */
+    height:188px;
+}
+.col-lg-3 .habaServItems p{
+   font-size: 13px;
+   color:rgba(143, 132, 132, 0.822);
+    height:100px;
+}
+.col-lg-3 .habaServItems a{
+    text-decoration: none;
+    color:rgba(143, 132, 132, 0.822);
+    font-weight: 800;
+
+ }
+ .habaTafItems{
+    height:380px;
+    background-color: rgba(124, 127, 129, 0.589);
+    padding:25px;
+    color:rgba(255, 255, 255, 0.76);
+    border-radius: 5px;
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.4s ;
+    margin-bottom: 10px;
+ }
+ .habaTafItems span{
+    padding: 10px 25px;
+    background-color: rgba(22, 109, 240, 0.897);
+    font-weight: 800;
+    border-radius: 50px;
+    font-size: 14px;
+ }
+ .habaTafItems h3{
+    font-weight: 800;
+    font-size: 23px;
+ }
+ .habaTafItems:hover{
+    transform: scale(1.2);
+ }
+ .habaTafItems .tarif_info{
+   margin-top: 12px;
+   height:200px;
+ }
+ .habaTafItems .tarif_info ul{
+    list-style: none;
+  }
+
+  .habaTafItems .tarif_info ul li{
+    margin-bottom: 7px;
+    font-size: 15px;
+    text-transform: capitalize;
+  }
+  .habaTafItems .tarif_info ul li i{
+    color:rgb(226, 69, 69);
+  }
+  .habaTafItems  a{
+    position:relative;
+    bottom:-52px;
+    text-align: center;
+    text-decoration: none;
+    color:white;
+    width:30%;
+    background-color: rgba(22, 109, 240, 0.897);
+    padding:10px 28%;
+    border-radius:10px;
+    font-weight: 800;
+    border:2px solid rgba(22, 109, 240, 0.897);
+    transition:all ease-in 0.4s;
+  }
+  .habaTafItems  a:hover{
+    text-align: center;
+    text-decoration: none;
+    color:white;
+    background-color: rgba(22, 109, 240, 0);
+    padding:10px 28%;
+    width:80%;
+    border-radius:10px;
+    font-weight: 800;
+    border:2px solid rgba(22, 109, 240, 0.897);
+    transition:all ease-in 0.4s;
+  }
+  .habaTestItems{
+    /* min-width: 50%; */
+  }
+  .habaTestItems p {
+    color:rgba(179, 183, 187, 0.979);
+  }
+  .habaTestItems span {
+    font-weight: 800;
+    color:rgba(211, 214, 214, 0.89);
+  }
+  .habaTestItems img {
+    border:2px solid rgb(245, 244, 244);
+    border-radius: 50%;
+    width:50px;
+    height:50%;
+    /* position:relative;
+    left:10%; */
+  }
+  .habaTestItems img {
+    border:2px solid rgb(245, 244, 244);
+    border-radius: 50%;
+    width:50px;
+    height:50px;
+    /* position:relative;
+    left:10%; */
+  }
+  .habaTestItems ul li{
+   display: inline-block;
+   margin-left: 1px;
+   color:rgb(167, 116, 8);
+  }
+  /* .habaTestItems .det{
+    position: relative;
+    left:30%;
+   } */
+   .habaTestItems ul {
+    position: relative;
+    left:0%;
+   }
+   .habaTestItems h6{
+    color:rgb(7, 7, 7);
+   }
+   .habaAbout{
+    height:70vh;
+   }
+   .habaAbout .col-lg-4 img{
+    width:300px;
+    height:300px;
+    vertical-align: top;
+    text-align: center;
+   }
+   .habaAbout .col-lg-8 p{
+    font-size: 15px;
+   }
+   .habaFooter-links ul li{
+    margin-bottom: 15px;
+   }
+   .habaFooter-links ul li a{
+    text-decoration: none;
+    color:rgb(245, 244, 244);
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.4s all;
+   }
+   .habaFooter-links ul li a:hover{
+    text-decoration: none;
+    color:rgba(240, 70, 70, 0.89);
+    letter-spacing: 4px;
+   }
+   .habaFooter-network ul li i{
+    font-size: 15px;
+    z-index: 2;
+    transition: 0.2s linear;
+   }
+   .habaFooter-links ul {
+    list-style: none;
+   }
+   .habaFooter-network ul li i:hover{
+    
+    color:white;
+    transform: scale(1.3);
+    }
+   .habaFooter-network ul li a{
+    text-decoration: none;
+    color:rgb(124, 127, 129);
+   }
+   .habaFooter-htg ul li{
+    display: inline-flex;
+    padding:5px 10px;
+    background-color: aliceblue;
+    border-radius: 40px;
+    margin-bottom: 5px;
+    font-weight: 600;
+   }
+   .habaFooter-htg ul li a{
+    text-decoration: none;
+   }
+   .habaFooter-network ul li {
+    width:40px;
+    height:40px;
+    line-height: 40px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    font-size: 15px;
+    position: relative;
+    overflow: hidden;
+   }
+   .habaFooter-network ul a::before {
+    content:"";
+    position:absolute;
+    width:120%;
+    height:120%; 
+    background-color: rgb(41, 139, 219);
+    transform: rotate(45deg);
+    left:-110%;
+    top:90%;
+    overflow: hidden;
+   }
+   .habaFooter-network ul li a:hover::before {
+    animation: aaa 0.3s 1;
+    top:-10%;
+    left:-10%;
+   }
+   @keyframes aaa {
+    0%{
+        left:-110%;
+        top:-10%;
+        color:white;
+    }
+    50%{ left:10%;
+        top:30%;
+        color:white;}
+    100%{ left:10%;
+        top:10%;
+        color:white;}
+    
+   }
+   /* .copyright{
+    position:relative;
+    left:35.5%;
+   } */
+   
+   .keepUp{
+    position:fixed;
+    right:0;
+    bottom:3px;
+    width:  70px;
+    height:70px;
+    border-radius: 50%;
+    background-color: rgb(226, 69, 69);
+    z-index: 30;
+   }
+   .keepUp span{
+    font-size: 19px;;
+    text-align: center;
+    line-height: 19px;
+    position:relative;
+    top:30%;
+    left:30%;
+   }
+   .keepUp span .fa{
+    font-size: 29px;
+    position: relative;
+   }
+ 
+   .keepUp span a {
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    color:aliceblue;
+   }
+   form .form-control{
+    border:none !important;
+    outline: none !important;
+    border-radius: 50px !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    box-shadow: none !important;
+   }
+   form button{
+    border:none;
+    box-shadow: none !important;
+    border-radius: 50px !;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+   }

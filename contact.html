@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/css1/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/css1/owl.carousel.css">
+    <link rel="stylesheet" href="css/css1/nice-select.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <title>HabaSeur | Presentation > Contact</title> 
+    <title>Document</title>
+</head>
+<body>
+    <header class="habaHeader">
+        <nav class="habaNav">
+            <p class="habaLogo">.HabaSeur</p>
+             <ul class="habaLinks ">
+                <li><a href="#" class="habaNav-link">Home</a></li>
+                <li><a href="#rel" class="habaNav-link">Realisation</a></li>
+                <li><a href="#off" class="habaNav-link">Offres</a></li>
+                <li><a href="#test" class="habaNav-link"></i>Testimonials</a></li>
+                <li><a href="contact.html" class="habaNav-link active">Contact</a></li>
+            </ul>
+            <span class="toggle"><i class="toggleB fa fa-bars"></i></span>
+        </nav>
+        <div class="banner">
+            <div class="banner-info">
+                <h1 class="banner-titre">.Habaseur > Contact</h1>
+                <!-- <span class="banner-mois">Mois</span> -->
+                <p class="banner-p">Lorem ipsum dolor sit amet
+                     consectetur adipisicing elit. Fugit accusamus veniam consequuntur eveniet a aperiam. Enim doloremque esse officia modi eius? Ut animi sequi 
+                    distinctio consequuntur quasi nesciunt odio. Pariatur.</p>
+                    <div class="navPlus">
+                        <a href="#" class="banner-a shadow"><i class="fa fa-arrow-left"></i>Prendre RDV</a>
+                        <a href="#off" class="banner-b shadow"><i class="fa fa-arrow-left"></i>Nos offres</a>
+                    </div>
+            </div>
+        </div>
+    </header>
+    <script> const pl=document.getElementsByClassName('habaTafItems');
+        const bb=document.querySelector('.banner-b');
+        const Toggle=document.querySelector('.toggleB');
+        const Toggle1=document.querySelector('.toggleC');
+        const navclose=document.querySelector('.habaLinks');
+        const navR=document.querySelector('.navR');
+        console.log(pl); 
+        function toggle(){
+            if(window.innerWidth>=300 && window.innerWidth<=576)
+            {
+                let str=Toggle.classList[2].toString();
+                console.log(str);
+                if(str!="fa-bars"){
+                    Toggle.classList.remove('fa-close');
+                    Toggle.classList.add('fa-bars');
+                    navR.style.display="none";
+                    console.log(Toggle,navR);
+                }else{
+                    Toggle.classList.remove('fa-bars');
+                    Toggle.classList.add('fa-close');
+                    navR.style.display="block";
+                    console.log(Toggle);
+                }
+            }
+        }
+        function toggle1(){
+            if(window.innerWidth>=300 && window.innerWidth<=576)
+            {
+                let str=Toggle.classList[2].toString();
+                console.log(str);
+                if(str!="fa-bars"){
+                    Toggle.classList.remove('fa-close');
+                    Toggle.classList.add('fa-bars');
+                    navR.style.display="none";
+                    console.log(Toggle,navR);
+                }else{
+                    Toggle1.classList.remove('fa-bars');
+                    Toggle1.classList.add('fa-close');
+                    navR.style.display="block";
+                    console.log(Toggle);
+                }
+            }
+        }
+        function navP(){
+            if(window.innerWidth>=768){
+                
+                document.querySelector('.toggle').classList.remove('active');
+                document.querySelector('.habaLinks').style.display='block';
+                document.querySelector('.navR').style.display='none';
+                // closeNav.style.display='block';
+            }
+            
+            console.log(navclose);
+        }
+        window.addEventListener('load',navP);
+        Toggle.addEventListener('click',toggle);
+        Toggle1.addEventListener('click',toggle1);
+        window.onscroll=function(){
+                    if(window.innerWidth<=300)
+                    {
+                        for(p of pl){
+                        p.classList.remove('pl-5');
+                        console.log(p) ;
+                    }
+                    }else{
+                        for(p of pl){
+                        p.classList.add('pl-5');
+                        console.log( p) ;
+                        } 
+                    }
+                    if(scrollY>200){
+                        document.querySelector('.habaNav').classList.add('stickey');
+                    }else{document.querySelector('.habaNav').classList.remove('stickey');}
+                    console.log(p) ;
+                }
+        
+        window.onresize=function(){
+                    if(window.innerWidth<=300)
+                    {
+                        for(p of pl){
+                        p.classList.remove('pl-5');
+                        console.log( p) ;
+                    }
+                    }else{
+                        for(p of pl){
+                        p.classList.add('pl-5');
+                        console.log( p) ;
+                        } 
+                    }
+                    console.log( p) ;
+                }
+        
+        window.onload=function(){
+            if(window.innerWidth>300){
+                bb.style.bottom='0px';
+                console.log(bb);
+            }else{
+                bb.style.bottom='-25px';
+                console.log(bb); 
+            }
+              if(window.innerWidth>=768){
+                document.querySelector('.habaLinks').style.display='block';
+                document.querySelector('.toggle').style.display="none";
+                document.querySelector('.navR').style.display="none";
+                console.log(bb);
+            }
+            if(window.innerWidth>=250 && window.innerWidth<=576)
+            {
+                document.querySelector('.toggle').style.display='block';
+                document.querySelector('.habaLinks').style.display='none';
+
+            }else{
+                document.querySelector('.toggle').style.display='none';
+                document.querySelector('.habaLinks').style.display='block';
+            }
+        }
+        window.onresize=function(){
+            if(window.innerWidth>300){
+                bb.style.bottom='0px';
+                console.log(bb);
+            }else{
+                bb.style.bottom='-25px';
+                console.log(bb); 
+            }
+            if(window.innerWidth>=300 && window.innerWidth<=576)
+            {
+                document.querySelector('.toggle').style.display='block';
+                document.querySelector('.habaLinks').style.display='none';
+
+            }else{
+                document.querySelector('.toggle').style.display='none';
+                document.querySelector('.habaLinks').style.display='block';
+                document.querySelector('.navR').style.display='none';
+                Toggle.classList.remove('fa-close');
+                Toggle.classList.add('fa-bars');
+            }
+        }
+</script>
+</body>
+</html>

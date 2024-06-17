@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/css1/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/css1/owl.carousel.css">
+    <link rel="stylesheet" href="css/css1/nice-select.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>HabaSeur | Presentation</title> 
+</head>
+<body>
+    <header class="habaHeader">
+        <nav class="habaNav">
+            <p class="habaLogo">.HabaSeur</p>
+             <ul class="habaLinks ">
+                <li><a href="#" class="habaNav-link">Home</a></li>
+                <li><a href="#rel" class="habaNav-link">Realisation</a></li>
+                <li><a href="#off" class="habaNav-link">Offres</a></li>
+                <li><a href="#test" class="habaNav-link"></i>Testimonials</a></li>
+                <li><a href="https://wa.me/+243996834353" class="habaNav-link active">Contact</a></li>
+            </ul>
+            <span class="toggle"><i class="toggleB fa fa-bars"></i></span>
+        </nav>
+        <div class="banner">
+            <div class="banner-info">
+                <h1 class="banner-titre">Nous Créons votre site web professionnel en moins d'un Mois</h1>
+                <!-- <span class="banner-mois">Mois</span> -->
+                <p class="banner-p">Lorem ipsum dolor sit amet
+                     consectetur adipisicing elit. Fugit accusamus veniam consequuntur eveniet a aperiam. Enim doloremque esse officia modi eius? Ut animi sequi 
+                    distinctio consequuntur quasi nesciunt odio. Pariatur.</p>
+                    <div class="navPlus">
+                        <a href="https://wa.me/+243996834353" class="banner-a shadow"><i class="fa fa-arrow-left"></i>Prendre RDV</a>
+                        <a href="#off" class="banner-b shadow"><i class="fa fa-arrow-left"></i>Nos offres</a>
+                    </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="container HabaServ">
+            <h1 class="habaTitle" id="rel"> <span>Nos Realisations <i class="fa fa-arrow-left"></i></span></h1><br>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6 ">
+                    <div class="habaServItems">
+                        <img src="img/lukaj.PNG" alt="" srcset="">
+                        <p class="text-justify">Lorem ipsum dolor sit amet consectetur
+                             adipisicing elit. Nobis laborum animi, officia sequi beatae quos ducimus itaque molestiae recusandae dolorem aliquid facere maiores, 
+                            tempora saepe illo numquam vel maxime commodi!</p>
+                            <a href="http://"><i class="fa fa-globe"></i> molandeli</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="habaServItems ">
+                        <img src="img/lukaj.PNG" alt="" srcset="">
+                        <p class="text-justify">Lorem ipsum dolor sit amet consectetur
+                             adipisicing elit. Nobis laborum animi, officia sequi beatae quos ducimus itaque molestiae recusandae dolorem aliquid facere maiores, 
+                            tempora saepe illo numquam vel maxime commodi!</p>
+                            <a href="http://"><i class="fa fa-globe"></i> molandeli</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 ">
+                    <div class="habaServItems ">
+                        <img src="img/app.PNG" alt="" srcset="">
+                        <p class="text-justify">Lorem ipsum dolor sit amet consectetur
+                             adipisicing elit. Nobis laborum ame commodi!</p>
+                            <a href="http://"><i class="fa fa-globe"></i> molandeli</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 ">
+                    <div class="habaServItems">
+                        <img src="img/a.png" alt="" srcset="">
+                        <p class="text-justify">Lorem ipsum dolor sit amet consectetur
+                             adipisicing elit. Nobis laborum animi, officia sequi beatae quos ducimus itaque molestiae recusandae dolorem aliquid facere maiores, 
+                            tempora saepe illo numquam vel maxime commodi!</p>
+                            <a href="http://"><i class="fa fa-globe"></i> molandeli</a>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <section class="navR closeNav">
+            <span id="toggle1" class="toggle tb1 text-light"><i class="toggleC fa fa-close"></i></span>
+            <ul class="habaLinks1 ">
+                <li><a href="#" class="habaNav-link">Home</a></li>
+                <li><a href="#rel" class="habaNav-link">Realisation</a></li>
+                <li><a href="#off" class="habaNav-link">Offres</a></li>
+                <li><a href="#test" class="habaNav-link"></i>Testimonials</a></li>
+                <li><a href="https://wa.me/+243996834353" class="habaNav-link active">Contact</a></li>
+            </ul>
+        </section>
+        <script>
+            const pl=document.getElementsByClassName('habaTafItems');
+            const bb=document.querySelector('.banner-b');
+            const Toggle=document.querySelector('.toggleB');
+            const Toggle1=document.querySelector('.toggleC');
+            const navclose=document.querySelector('.habaLinks');
+            const navR=document.querySelector('.navR');
+            console.log(pl);
+            function toggle(){
+                if(window.innerWidth>=300 && window.innerWidth<=576)
+                {
+                    let str=Toggle.classList[2].toString();
+                    console.log(str);
+                    if(str!="fa-bars"){
+                        Toggle.classList.remove('fa-close');
+                        Toggle.classList.add('fa-bars');
+                        navR.style.display="none";
+                        console.log(Toggle,navR);
+                    }else{
+                        Toggle.classList.remove('fa-bars');
+                        Toggle.classList.add('fa-close');
+                        navR.style.display="block";
+                        console.log(Toggle);
+                    }
+                }
+            }
+            function toggle1(){
+                if(window.innerWidth>=300 && window.innerWidth<=576)
+                {
+                    let str=Toggle.classList[2].toString();
+                    console.log(str);
+                    if(str!="fa-bars"){
+                        Toggle.classList.remove('fa-close');
+                        Toggle.classList.add('fa-bars');
+                        navR.style.display="none";
+                        console.log(Toggle,navR);
+                    }else{
+                        Toggle1.classList.remove('fa-bars');
+                        Toggle1.classList.add('fa-close');
+                        navR.style.display="block";
+                        console.log(Toggle);
+                    }
+                }
+            }
+            function navP(){
+                if(window.innerWidth>=768){
+                    
+                    document.querySelector('.toggle').classList.remove('active');
+                    document.querySelector('.habaLinks').style.display='block';
+                    document.querySelector('.navR').style.display='none';
+                    // closeNav.style.display='block';
+                }
+                
+                console.log(navclose);
+            }
+            window.addEventListener('load',navP);
+            Toggle.addEventListener('click',toggle);
+            Toggle1.addEventListener('click',toggle1);
+            window.onscroll=function(){
+                        if(window.innerWidth<=300)
+                        {
+                            for(p of pl){
+                            p.classList.remove('pl-5');
+                            console.log(p) ;
+                        }
+                        }else{
+                            for(p of pl){
+                            p.classList.add('pl-5');
+                            console.log( p) ;
+                            } 
+                        }
+                        if(scrollY>200){
+                            document.querySelector('.habaNav').classList.add('stickey');
+                        }else{document.querySelector('.habaNav').classList.remove('stickey');}
+                        console.log(p) ;
+                    }
+            
+            window.onresize=function(){
+                        if(window.innerWidth<=300)
+                        {
+                            for(p of pl){
+                            p.classList.remove('pl-5');
+                            console.log( p) ;
+                        }
+                        }else{
+                            for(p of pl){
+                            p.classList.add('pl-5');
+                            console.log( p) ;
+                            } 
+                        }
+                        console.log( p) ;
+                    }
+            
+            window.onload=function(){
+                if(window.innerWidth>300){
+                    bb.style.bottom='0px';
+                    console.log(bb);
+                }else{
+                    bb.style.bottom='-25px';
+                    console.log(bb); 
+                }
+                  if(window.innerWidth>=768){
+                    document.querySelector('.habaLinks').style.display='block';
+                    document.querySelector('.toggle').style.display="none";
+                    document.querySelector('.navR').style.display="none";
+                    console.log(bb);
+                }
+                if(window.innerWidth>=250 && window.innerWidth<=576)
+                {
+                    document.querySelector('.toggle').style.display='block';
+                    document.querySelector('.habaLinks').style.display='none';
+
+                }else{
+                    document.querySelector('.toggle').style.display='none';
+                    document.querySelector('.habaLinks').style.display='block';
+                }
+            }
+            window.onresize=function(){
+                if(window.innerWidth>300){
+                    bb.style.bottom='0px';
+                    console.log(bb);
+                }else{
+                    bb.style.bottom='-25px';
+                    console.log(bb); 
+                }
+                if(window.innerWidth>=300 && window.innerWidth<=576)
+                {
+                    document.querySelector('.toggle').style.display='block';
+                    document.querySelector('.habaLinks').style.display='none';
+
+                }else{
+                    document.querySelector('.toggle').style.display='none';
+                    document.querySelector('.habaLinks').style.display='block';
+                    document.querySelector('.navR').style.display='none';
+                    Toggle.classList.remove('fa-close');
+                    Toggle.classList.add('fa-bars');
+                }
+            }
+            
+        </script>
+        <section class="container habaTarif">
+            <h1 class="habaTitle" id="off"><span>Nos offres <i class="fa fa-dollar"></i></span></h1><br>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12 habaTafInner">
+                    <div class="habaTafItems shadow pl-5 pr-5">
+                        <span><i class="fa fa-star"></i> Populaire</span><br>
+                      <div class="tarif_info">
+                        <strong>289$</strong><br>
+                        <h3>E-Commerce</h3>
+                        <ul>
+                            <li><i class="fa fa-check"></i> Hebergent</li>
+                            <li><i class="fa fa-check"></i> referencement SEO</li>
+                            <li><i class="fa fa-check"></i> lolo</li>
+                            <li><i class="fa fa-check"></i> akatsuki</li>
+                        </ul>
+                      </div>
+                      <a href="https://wa.me/+243996834353">Commander</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 habaTafInner">
+                    <div class="habaTafItems shadow-lg pl-5 pr-5">
+                        <span><i class="fa fa-star"></i> Populaire</span><br>
+                      <div class="tarif_info">
+                        <strong>170$</strong><br>
+                        <h3>Site vitrine</h3>
+                        <ul>
+                            <li><i class="fa fa-check"></i> Hebergent</li>
+                            <li><i class="fa fa-check"></i> referencement SEO</li>
+                            <li><i class="fa fa-check"></i> lolo</li>
+                            <li><i class="fa fa-check"></i> akatsuki</li>
+                        </ul>
+                      </div>
+                      <a href="https://wa.me/+243996834353">Commander</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 habaTafInner">
+                    <div class="habaTafItems shadow-lg pl-5 pr-5">
+                        <span><i class="fa fa-star"></i> Populaire</span><br>
+                      <div class="tarif_info">
+                        <strong>200$</strong><br>
+                        <h3>Portfolio</h3>
+                        <ul>
+                            <li><i class="fa fa-check"></i> Hebergent</li>
+                            <li><i class="fa fa-check"></i> referencement SEO</li>
+                            <li><i class="fa fa-check"></i> lolo</li>
+                            <li><i class="fa fa-check"></i> akatsuki</li>
+                        </ul>
+                      </div>
+                      <a href="https://wa.me/+243996834353">Commander</a>
+                    </div>
+                </div>
+            </div>
+        </section><br>
+        <section class="container-fluid habaTesti bg-dark py-5">
+            <h1 class="habaTitle" id="test"><span>Nos temoignanges <i class="fa fa-dollar"></i></span></h1><br>
+            <div class="row habaTestInner">
+              <div class="col-lg-4 col-md-6 col-sm-6 ">
+                <div class="habaTestItems pl-5 pr-5">
+                    <p class="text-justify">Lorem ipsum dolor sit amet consectetur 
+                        adipisicing elit. Officia accusamus veritatis dolorum. Error temporibus explicabo deleniti blanditiis, numquam laboriosam, voluptates ipsum commodi consequuntur dolores molestias 
+                        velit similique odit obcaecati praesentium.</p>
+                   <div class="det">
+                    <img src="img/31.jpg" alt="patrice Lumumba"><br>
+                    <span>Patrice Lumumba</span>
+                    <h6>Ir Reseau telecome</h6>
+                    <span class="start">
+                        <ul>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                        </ul>
+                    </span>
+                   </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="habaTestItems pl-5 pr-5">
+                    <p class="text-justify">Lorem ipsum dolor sit amet consectetur 
+                        adipisicing elit. Officia accusamus veritatis dolorum. Error temporibus explicabo deleniti blanditiis, numquam laboriosam, voluptates ipsum commodi consequuntur dolores molestias 
+                        velit similique odit obcaecati praesentium.</p>
+                   <div class="det">
+                    <img src="img/t4.jpg" alt="patrice Lumumba"><br>
+                    <span>Kosta Gabriel</span>
+                    <h6>Embeded system developer</h6>
+                    <span class="start">
+                        <ul>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                        </ul>
+                    </span>
+                   </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="habaTestItems pl-5 pr-5">
+                    <p class="text-justify">Lorem ipsum dolor sit amet consectetur 
+                        adipisicing elit. Officia accusamus veritatis dolorum. Error temporibus explicabo deleniti blanditiis, numquam laboriosam, voluptates ipsum commodi consequuntur dolores molestias 
+                        velit similique odit obcaecati praesentium.</p>
+                   <div class="det">
+                    <img src="img/32.jpg" alt="patrice Lumumba"><br>
+                    <span>Exaucé Ntumba</span><br>
+                    <h6>Me Avocat & juriste plaidoirier</h6>
+                    <span class="start">
+                        <ul>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                        </ul>
+                    </span>
+                   </div>
+                </div>
+              </div>
+            </div>
+        </section>
+        <div class="keepUp shadow">
+            <span><a href="#"><i class="fa fa-arrow-up"></i></a></span>
+        </div>
+        <section class="container habaAbout py-5">
+            
+            <h1 class="habaTitle mb-3"><span>A propos <i class="fa fa-dollar"></i></span></h1>
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-sm-12 pl-5 pr-5"><img src="img/Acceuil1.jpg" alt="" srcset=""></div>
+                <div class="col-lg-8 col-md-12 col-sm-12 pl-5 pr-5">
+                    <p class="text-justify">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex in omnis, quasi aliquid rerum perspiciatis facilis amet et cum libero dolorem enim! Cumque eveniet inventore modi quis cupiditate? Aspernatur, temporibus?
+                        Perferendis dolore voluptas facere, sunt maiores placeat necessitatibus corrupti veniam dicta ab. Voluptatibus quibusdam ipsum similique suscipit nisi cum eos expedita non fugiat! Magni laudantium excepturi animi odio, hic ex?
+                        <p class="text-justify">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex in omnis, quasi aliquid rerum perspiciatis facilis amet et cum libero dolorem enim! Cumque eveniet inventore modi quis cupiditate? Aspernatur, temporibus?
+                            Perferendis dolore voluptas facere, sunt maiores placeat necessitatibus corrupti veniam dicta ab. Voluptatibus quibusdam ipsum similique suscipit nisi cum eos expedita non fugiat! Magni laudantium excepturi animi odio, hic ex?
+                        </p>
+                    </p>
+                    
+                </div>
+            </div>
+        </section>
+        <footer class="container-fluid habaFooter bg-dark text-light text-center">
+            <div class="row pt-5">
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 habaFooter-links pl-5 pr-5">
+                    <h4>Nos Liens</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#rel">Réalisations</a></li>
+                        <li><a href="#off">Offres</a></li>
+                        <li><a href="#test">Testimonials</a></li>
+                        <li><a href="https://wa.me/+243996834353">contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 habaFooter-network pl-5 pr-5">
+                    <h4>Nos Reseaux</h4>
+                    <ul>
+                        <li class="d-inline-block"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li class="d-inline-block"><a href="#"><i class="fa fa-whatsapp"></i></a></li>
+                        <li class="d-inline-block"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li class="d-inline-block"><a href="#"><i class="fa fa-github"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 habaFooter-htg pl-5 pr-5">
+                    <h4>HashTags</h4>
+                    <ul>
+                        <li class="shadow"><a href="#">SiteWeb</a></li>
+                        <li class="shadow"><a href="#">E-Commerce</a></li>
+                        <li class="shadow"><a href="#">Freelance</a></li>
+                        <li class="shadow"><a href="#">Application</a></li>
+                        <li class="shadow"><a href="#">Design</a></li>
+                        <li class="shadow"><a href="#">Innovation</a></li>
+                    </ul>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 pl-5 pr-5">
+                    <h4>Newsletter</h4>
+                    <p class="text-justify">Lorem ipsum, dolor
+                         sit amet consectetur adipisicing elit. Quisquam nam, est minima incidunt assumenda quod adipisci aliquam cum facere ipsum quibusdam ipsa! 
+                        Asperiores error neque corporis sint tempora impedit enim!</p>
+                    <form action="" method="post">
+                        <div class="form-group pl-2 pr-2">
+                            <div class="input-group-append"><input type="email" placeholder="Email" class="form-control"><button class="btn btn-primary"><i class="fa fa-send"></i></button></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row text-center">
+               <div class="col-lg-12">
+                <p class=" copyright">
+                    <i class="fa fa-copyright"></i>copyright <script>document.write(new Date().getFullYear());</script> by .Habaseur all reserved by LibangaTech
+                </p>
+               </div>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
